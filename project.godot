@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="uid://4pqund3nukl7"
+run/main_scene="uid://cvkvtb25je5tc"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 display_server/driver.linuxbsd="wayland"
