@@ -1,0 +1,9 @@
+res://Scripts/character_body_2d.gd
+res://Scenes/node_2d.tscn
+res://Scenes/node_2d.gd
+res://Scenes/pc.tscn
+res://Scenes/menu.tscn
+res://Scripts/global.gd
+res://Scripts/node_2d.gd
+res://Scripts/dormitor.gd
+res://Scripts/pc.gd

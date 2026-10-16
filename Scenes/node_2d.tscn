@@ -1,28 +1,43 @@
 [gd_scene format=3 uid="uid://4pqund3nukl7"]
 
+[ext_resource type="Script" uid="uid://cctgvgpd1p763" path="res://Scripts/dormitor.gd" id="1_hh5uf"]
 [ext_resource type="Script" uid="uid://bss4mgihbqfdc" path="res://Scripts/character_body_2d.gd" id="1_v1qfn"]
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_hh5uf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3pr0x"]
 size = Vector2(118, 120)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfaw2"]
-size = Vector2(1145, 137)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8s7el"]
+size = Vector2(147, 78)
 
-[node name="Node2D" type="Node2D" unique_id=974754742]
+[node name="dormitor" type="Node2D" unique_id=974754742]
+script = ExtResource("1_hh5uf")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=995139895]
+[node name="Player" type="CharacterBody2D" parent="." unique_id=995139895]
 script = ExtResource("1_v1qfn")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1020121621]
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1020121621]
 texture = ExtResource("2_hh5uf")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1236933840]
+[node name="hitbox" type="CollisionShape2D" parent="Player" unique_id=1236933840]
 position = Vector2(0, -2)
 shape = SubResource("RectangleShape2D_3pr0x")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2127334041]
+[node name="pc" type="Area2D" parent="." unique_id=645065608]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=658432660]
-position = Vector2(571, 671)
-shape = SubResource("RectangleShape2D_vfaw2")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pc" unique_id=141353494]
+position = Vector2(640, 40)
+shape = SubResource("RectangleShape2D_8s7el")
+
+[node name="ColorRect" type="ColorRect" parent="pc" unique_id=1901239356]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 566.0
+offset_right = 714.0
+offset_bottom = 79.0
+grow_horizontal = 2
+color = Color(0.48649824, 0.2842176, 0, 1)
+
+[connection signal="area_entered" from="pc" to="." method="_on_pc_area_entered"]
+[connection signal="body_entered" from="pc" to="." method="_on_pc_body_entered"]
