@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cvkvtb25je5tc"]
 
 [ext_resource type="Script" uid="uid://c08k8ei11c345" path="res://Scripts/menu.gd" id="1_1rerr"]
-[ext_resource type="Texture2D" uid="uid://bcdxhonj22u0r" path="res://Fundal_main_menu.jpg" id="2_xhh6f"]
+[ext_resource type="Texture2D" uid="uid://bcdxhonj22u0r" path="res://Scenes/Fundal_main_menu.jpg" id="2_xhh6f"]
 
 [node name="Menu" type="Control" unique_id=1008628476]
 layout_mode = 3
@@ -48,4 +48,5 @@ text = "IEȘIRE
 
 "
 
-[connection signal="pressed" from="VBoxContainer/ButtonJoaca" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ButtonJoaca" to="." method="_on_button_joaca_pressed"]
+[connection signal="pressed" from="VBoxContainer/ButtonIesire" to="." method="_on_button_iesire_pressed"]
