@@ -39,5 +39,11 @@ offset_bottom = 79.0
 grow_horizontal = 2
 color = Color(0.48649824, 0.2842176, 0, 1)
 
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1973584489]
+offset_right = 684.0
+offset_bottom = 79.0
+theme_override_font_sizes/normal_font_size = 22
+text = "PRESS E TO BROWSE THE COMPUTER"
+
 [connection signal="area_entered" from="pc" to="." method="_on_pc_area_entered"]
 [connection signal="body_entered" from="pc" to="." method="_on_pc_body_entered"]

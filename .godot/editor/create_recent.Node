@@ -1,6 +1,6 @@
+Control
 RichTextLabel
 ColorRect
-Control
 CollisionShape2D
 Area2D
 Button

@@ -1,2 +1,4 @@
 res://Scripts/pc.gd
 res://Scenes/pc.tscn
+res://Scenes/node_2d.tscn
+res://Scripts/dormitor.gd
