@@ -10,3 +10,4 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().change_scene_to_file("res://Scenes/node_2d.tscn")
+	$cursor.position = get_viewport().get_mouse_position()

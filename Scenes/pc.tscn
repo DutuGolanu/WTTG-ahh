@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cycm30vgf78ap"]
 
 [ext_resource type="Script" uid="uid://d0c6yybucjnbi" path="res://Scripts/pc.gd" id="1_vdjpl"]
+[ext_resource type="Texture2D" uid="uid://b24ls7rkak32g" path="res://Assets/Pixel Cursor (480x160).png" id="2_touer"]
+[ext_resource type="Texture2D" uid="uid://bb5ltnudvvx87" path="res://Assets/linuxpenguin.jpg" id="3_cyams"]
 
 [node name="Pc" type="Control" unique_id=928619354]
 layout_mode = 3
@@ -55,6 +57,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1307482659]
+top_level = true
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -66,3 +69,22 @@ grow_vertical = 0
 theme_override_font_sizes/normal_font_size = 28
 text = "Press esc to stop using the computer"
 horizontal_alignment = 1
+
+[node name="cursor" type="Sprite2D" parent="." unique_id=1267672003]
+top_level = true
+texture = ExtResource("2_touer")
+region_enabled = true
+region_rect = Rect2(16, 14, 24, 36)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=67359781]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 41.0
+offset_right = -40.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_cyams")
