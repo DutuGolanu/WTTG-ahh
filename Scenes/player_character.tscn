@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://fe04lx08pprm"]
+
+[ext_resource type="Script" uid="uid://bng2i7qufnc8n" path="res://Scripts/player_character.gd" id="1_cmdk4"]
+[ext_resource type="Texture2D" uid="uid://b4t1concui7t6" path="res://Assets/playerAnimated.png" id="2_o0f8b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wko77"]
+atlas = ExtResource("2_o0f8b")
+region = Rect2(0, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb3n0"]
+atlas = ExtResource("2_o0f8b")
+region = Rect2(0, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ons1q"]
+atlas = ExtResource("2_o0f8b")
+region = Rect2(128, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajo0r"]
+atlas = ExtResource("2_o0f8b")
+region = Rect2(256, 0, 128, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flf3p"]
+atlas = ExtResource("2_o0f8b")
+region = Rect2(384, 0, 128, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vllde"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wko77")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pb3n0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ons1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajo0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flf3p")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vllde"]
+radius = 38.078865
+
+[node name="PlayerCharacter" type="CharacterBody2D" unique_id=1444347173]
+position = Vector2(0, -1)
+script = ExtResource("1_cmdk4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2085874068]
+position = Vector2(0, -129)
+sprite_frames = SubResource("SpriteFrames_vllde")
+
+[node name="hitbox" type="CollisionShape2D" parent="." unique_id=767729220]
+position = Vector2(0, -60)
+scale = Vector2(0.98040825, 1.6180314)
+shape = SubResource("CircleShape2D_vllde")

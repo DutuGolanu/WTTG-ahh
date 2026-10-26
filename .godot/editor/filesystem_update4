@@ -1,1 +1,4 @@
-res://Scenes/menu.tscn
+res://Scenes/player_character.tscn
+res://Scenes/node_2d.tscn
+res://Scripts/dormitor.gd
+res://Scripts/player_character.gd
