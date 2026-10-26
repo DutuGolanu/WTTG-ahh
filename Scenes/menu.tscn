@@ -34,14 +34,13 @@ custom_minimum_size = Vector2(349, 108)
 layout_mode = 2
 offset_transform_position = Vector2(0, -100)
 theme_override_font_sizes/font_size = 40
-text = "JOACĂ"
+text = "PLAY"
 
 [node name="ButtonIesire" type="Button" parent="VBoxContainer" unique_id=802768730]
 custom_minimum_size = Vector2(349, 108)
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
-text = "IEȘIRE
-
+text = "QUIT
 "
 
 [connection signal="pressed" from="VBoxContainer/ButtonJoaca" to="." method="_on_button_joaca_pressed"]

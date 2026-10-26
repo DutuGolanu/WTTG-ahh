@@ -1,17 +1,17 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792414358
+::res://::1792415677
 icon.svg::CompressedTexture2D::1790880795757653::1791733010::1792415677::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Assets/::1792413094
+::res://Assets/::1792415677
 linuxpenguin.jpg::CompressedTexture2D::2519243390822413494::1792413094::1792415677::1::::<><><>0<>0<>106ff6dd7cfe5bec7f68e3f37bf173c0<>res://.godot/imported/linuxpenguin.jpg-52cab06cdf718e3e941fdec01e7cfb34.ctex::
 Pixel Cursor (480x160).png::CompressedTexture2D::4342088155462088412::1792413094::1792415677::1::::<><><>0<>0<>ab5de06d2d4509e762954dcd67911ddb<>res://.godot/imported/Pixel Cursor (480x160).png-10e086a63cc7477fc058399a094fe123.ctex::
-::res://Scenes/::1792413094
+::res://Scenes/::1792417301
 Fundal_main_menu.jpg::CompressedTexture2D::1915840358430710599::1792398056::1792415677::1::::<><><>0<>0<>25799e866315a58fa53f3b4e77e5ff7d<>res://.godot/imported/Fundal_main_menu.jpg-dc28b7e652224478f863dc92f08457f2.ctex::
 menu.tscn::PackedScene::6268759943866120368::1792413094::0::1::::<><><>0<>0<><>::uid://c08k8ei11c345::::res://Scripts/menu.gd<>uid://2kbu1cyd5uct::::res://Scenes/Fundal_main_menu.jpg
-node_2d.tscn::PackedScene::2067450008304524526::1792144663::0::1::::<><><>0<>0<><>::uid://cctgvgpd1p763::::res://Scripts/dormitor.gd<>uid://bss4mgihbqfdc::::res://Scripts/character_body_2d.gd<>uid://4q335xxs2p::::res://icon.svg
-pc.tscn::PackedScene::6462282322154869987::1792413094::0::1::::<><><>0<>0<><>::uid://d0c6yybucjnbi::::res://Scripts/pc.gd<>uid://b24ls7rkak32g::::res://Assets/Pixel Cursor (480x160).png<>uid://bb5ltnudvvx87::::res://Assets/linuxpenguin.jpg
-::res://Scripts/::1792413094
+node_2d.tscn::PackedScene::2067450008304524526::1792417301::0::1::::<><><>0<>0<><>::uid://cctgvgpd1p763::::res://Scripts/dormitor.gd<>uid://bss4mgihbqfdc::::res://Scripts/character_body_2d.gd<>uid://4q335xxs2p::::res://icon.svg
+pc.tscn::PackedScene::6462282322154869987::1792416090::0::1::::<><><>0<>0<><>::uid://d0c6yybucjnbi::::res://Scripts/pc.gd<>uid://b24ls7rkak32g::::res://Assets/Pixel Cursor (480x160).png<>uid://bb5ltnudvvx87::::res://Assets/linuxpenguin.jpg
+::res://Scripts/::1792417301
 character_body_2d.gd::GDScript::3688761218886401388::1792413094::0::1::::<>CharacterBody2D<><>0<>0<><>::
-dormitor.gd::GDScript::4952844374101849970::1792413094::0::1::::<>Node2D<><>0<>0<><>::
+dormitor.gd::GDScript::4952844374101849970::1792417301::0::1::::<>Node2D<><>0<>0<><>::
 global.gd::GDScript::6817818281649720358::1792142306::0::1::::<>Node<><>0<>0<><>::
 menu.gd::GDScript::6596353249015524184::1792398056::0::1::::<>Control<><>0<>0<><>::
-pc.gd::GDScript::8920038246384668038::1792413094::0::1::::<>Control<><>0<>0<><>::
+pc.gd::GDScript::8920038246384668038::1792415881::0::1::::<>Control<><>0<>0<><>::
