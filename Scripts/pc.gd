@@ -27,7 +27,6 @@ func _on_browser_button_pressed() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel") and not event.is_echo():
-
 		if browser.is_browser_open():
 			browser.close_browser()
 		else:
