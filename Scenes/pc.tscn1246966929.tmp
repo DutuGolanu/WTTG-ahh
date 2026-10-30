@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://cycm30vgf78ap"]
+
+[ext_resource type="Script" uid="uid://d0c6yybucjnbi" path="res://Scripts/pc.gd" id="1_vdjpl"]
+[ext_resource type="Texture2D" uid="uid://b24ls7rkak32g" path="res://Assets/Pixel Cursor (480x160).png" id="2_touer"]
+[ext_resource type="Texture2D" uid="uid://bb5ltnudvvx87" path="res://Assets/linuxpenguin.jpg" id="3_cyams"]
+[ext_resource type="Script" uid="uid://b7c4y08trcrxa" path="res://Scripts/Pc_Apps/browser.gd" id="4_ndlf7"]
+
+[node name="Pc" type="Control" unique_id=928619354]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vdjpl")
+
+[node name="MarginiPc" type="Control" parent="." unique_id=1012847278]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="sus" type="ColorRect" parent="MarginiPc" unique_id=1471708063]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 1.0
+offset_bottom = 41.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="jos" type="ColorRect" parent="MarginiPc" unique_id=1696097795]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 680.0
+offset_bottom = 720.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="stanga" type="ColorRect" parent="MarginiPc" unique_id=1507900503]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 40.0
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="dreapta" type="ColorRect" parent="MarginiPc" unique_id=696506420]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 1240.0
+offset_right = 1280.0
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1307482659]
+top_level = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -87.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 28
+text = "Press esc to stop using the computer"
+horizontal_alignment = 1
+
+[node name="cursor" type="Sprite2D" parent="." unique_id=1267672003]
+top_level = true
+texture = ExtResource("2_touer")
+region_enabled = true
+region_rect = Rect2(16, 14, 24, 36)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=67359781]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_right = -40.0
+offset_bottom = -81.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_cyams")
+
+[node name="browser_SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1867931790]
+visible = false
+layout_mode = 0
+offset_left = 286.0
+offset_top = 74.0
+offset_right = 949.0
+offset_bottom = 586.0
+script = ExtResource("4_ndlf7")
+
+[node name="browser_SubViewport" type="SubViewport" parent="browser_SubViewportContainer" unique_id=190165748]
+handle_input_locally = false
+render_target_update_mode = 0
