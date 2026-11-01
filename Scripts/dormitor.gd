@@ -1,7 +1,7 @@
 
 extends Node2D
 
-@onready var player = $Player
+@onready var player = $PlayerCharacter
 
 func _ready() -> void:
 	var label = $RichTextLabel
