@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://cvkvtb25je5tc"]
 
 [ext_resource type="Script" uid="uid://c08k8ei11c345" path="res://Scripts/menu.gd" id="1_1rerr"]
-[ext_resource type="Texture2D" uid="uid://2kbu1cyd5uct" path="res://Scenes/Fundal_main_menu.jpg" id="2_xhh6f"]
+[ext_resource type="Texture2D" uid="uid://ho2lvq3ysebt" path="res://Assets/Main Menu.png" id="2_cayip"]
+[ext_resource type="Texture2D" uid="uid://ywj8s3a6w5g8" path="res://Assets/play_default.png" id="3_158mb"]
+[ext_resource type="Texture2D" uid="uid://ee6cjv3toeik" path="res://Assets/settings_default.png" id="4_wwsa2"]
+[ext_resource type="Texture2D" uid="uid://b443omxaaty8n" path="res://Assets/exit_default.png" id="5_jsrd8"]
 
 [node name="Menu" type="Control" unique_id=1008628476]
 layout_mode = 3
@@ -19,29 +22,33 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_xhh6f")
+texture = ExtResource("2_cayip")
 expand_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=610229905]
+[node name="button_play" type="Button" parent="." unique_id=5029428]
 layout_mode = 0
-offset_left = 102.0
-offset_top = 246.0
-offset_right = 492.0
-offset_bottom = 633.0
+offset_left = 212.0
+offset_top = 180.0
+offset_right = 332.0
+offset_bottom = 324.0
+icon = ExtResource("3_158mb")
 
-[node name="ButtonJoaca" type="Button" parent="VBoxContainer" unique_id=1852090978]
-custom_minimum_size = Vector2(349, 108)
-layout_mode = 2
-offset_transform_position = Vector2(0, -100)
-theme_override_font_sizes/font_size = 40
-text = "PLAY"
+[node name="button_settings" type="Button" parent="." unique_id=451260700]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 180.0
+offset_right = 556.0
+offset_bottom = 324.0
+icon = ExtResource("4_wwsa2")
 
-[node name="ButtonIesire" type="Button" parent="VBoxContainer" unique_id=802768730]
-custom_minimum_size = Vector2(349, 108)
-layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "QUIT
-"
+[node name="button_exit" type="Button" parent="." unique_id=1242125155]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 180.0
+offset_right = 780.0
+offset_bottom = 324.0
+icon = ExtResource("5_jsrd8")
 
-[connection signal="pressed" from="VBoxContainer/ButtonJoaca" to="." method="_on_button_joaca_pressed"]
-[connection signal="pressed" from="VBoxContainer/ButtonIesire" to="." method="_on_button_iesire_pressed"]
+[connection signal="pressed" from="button_play" to="." method="_on_button_play_pressed"]
+[connection signal="pressed" from="button_settings" to="." method="_on_button_settings_pressed"]
+[connection signal="pressed" from="button_exit" to="." method="_on_button_exit_pressed"]

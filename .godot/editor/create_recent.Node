@@ -1,3 +1,5 @@
+Button
+Camera2D
 TileMapLayer
 CollisionShape2D
 AnimatedSprite2D
@@ -6,4 +8,3 @@ Control
 RichTextLabel
 ColorRect
 Area2D
-Button

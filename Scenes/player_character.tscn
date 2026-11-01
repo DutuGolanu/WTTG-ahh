@@ -55,14 +55,16 @@ animations = [{
 radius = 38.078865
 
 [node name="PlayerCharacter" type="CharacterBody2D" unique_id=1444347173]
-position = Vector2(0, -1)
 script = ExtResource("1_cmdk4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2085874068]
-position = Vector2(0, -129)
+position = Vector2(0, -127)
 sprite_frames = SubResource("SpriteFrames_vllde")
 
 [node name="hitbox" type="CollisionShape2D" parent="." unique_id=767729220]
-position = Vector2(0, -60)
-scale = Vector2(0.98040825, 1.6180314)
+position = Vector2(0, -39.000004)
+scale = Vector2(0.98040825, 1.0180316)
 shape = SubResource("CircleShape2D_vllde")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1826621480]
+position = Vector2(0, -130)

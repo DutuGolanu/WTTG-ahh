@@ -1,4 +1,5 @@
-res://Scenes/player_character.tscn
+res://Scenes/menu.tscn
+res://Scripts/button_play.gd
+res://Scripts/menu.gd
 res://Scenes/node_2d.tscn
-res://Scripts/dormitor.gd
-res://Scripts/player_character.gd
+res://Scenes/player_character.tscn
