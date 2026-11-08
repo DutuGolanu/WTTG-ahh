@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://t6juaaemuxb4"]
+
+[ext_resource type="Script" uid="uid://cg1oilfsxmmrq" path="res://Scripts/scena_cu_locker.gd" id="1_wwd7t"]
+[ext_resource type="PackedScene" uid="uid://dtts8papnyqr3" path="res://Scenes/locker.tscn" id="2_qlky2"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="3_hxath"]
+
+[node name="scena_cu_locker" type="Node2D" unique_id=387327066]
+script = ExtResource("1_wwd7t")
+
+[node name="locker" parent="." unique_id=1239547774 instance=ExtResource("2_qlky2")]
+position = Vector2(388, 177)
+
+[node name="Player" parent="." unique_id=611474890 instance=ExtResource("3_hxath")]
+position = Vector2(157, 309)
+
+[editable path="locker"]

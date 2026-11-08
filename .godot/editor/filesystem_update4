@@ -1,1 +1,7 @@
-res://Scenes/menu.tscn
+res://Scripts/locker.gd
+res://Scenes/locker.tscn
+res://Scripts/global.gd
+res://Scripts/scena_cu_locker.gd
+res://Scenes/scena_cu_locker.tscn
+res://Scenes/node_2d.tscn
+res://Scripts/character_body_2d.gd

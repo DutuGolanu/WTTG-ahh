@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dtts8papnyqr3"]
+
+[ext_resource type="Script" uid="uid://c2ny6l44qhm3d" path="res://Scripts/locker.gd" id="1_woy3j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pr0x"]
+size = Vector2(51, 119)
+
+[node name="locker" type="Area2D" unique_id=1239547774]
+script = ExtResource("1_woy3j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1583599906]
+shape = SubResource("RectangleShape2D_3pr0x")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=256802616]
+offset_right = 684.0
+offset_bottom = 79.0
+theme_override_font_sizes/normal_font_size = 22
+text = "PRESS E TO HIDE"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=717566971]
+offset_left = -26.0
+offset_top = -60.0
+offset_right = 26.0
+offset_bottom = 60.0
