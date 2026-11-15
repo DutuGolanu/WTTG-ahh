@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bng2i7qufnc8n" path="res://Scripts/player_character.gd" id="1_cmdk4"]
 [ext_resource type="Texture2D" uid="uid://b4t1concui7t6" path="res://Assets/playerAnimated.png" id="2_o0f8b"]
+[ext_resource type="PackedScene" uid="uid://bebca44ttha2j" path="res://flashlight.tscn" id="3_o0f8b"]
+[ext_resource type="Texture2D" uid="uid://cbosvt246mr82" path="res://Assets/lanterna_con.png" id="4_wko77"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wko77"]
 atlas = ExtResource("2_o0f8b")
@@ -68,3 +70,10 @@ shape = SubResource("CircleShape2D_vllde")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1826621480]
 position = Vector2(0, -130)
+
+[node name="Flashlight" parent="." unique_id=573605052 instance=ExtResource("3_o0f8b")]
+position = Vector2(8, -87)
+energy = 0.9
+texture = ExtResource("4_wko77")
+offset = Vector2(0, 0)
+texture_scale = 2.5

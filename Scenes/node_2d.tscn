@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cctgvgpd1p763" path="res://Scripts/dormitor.gd" id="1_hh5uf"]
 [ext_resource type="PackedScene" uid="uid://fe04lx08pprm" path="res://Scenes/player_character.tscn" id="2_v1qfn"]
+[ext_resource type="PackedScene" uid="uid://r6of2uoy1a3m" path="res://Scenes/area_2d.tscn" id="3_6whob"]
 [ext_resource type="Texture2D" uid="uid://y6s6uknwjy6x" path="res://Assets/tileset3.png" id="3_hh5uf"]
+[ext_resource type="PackedScene" uid="uid://cqf0iekbh4ckk" path="res://inventory_ui.tscn" id="5_u7krg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6whob"]
 texture = ExtResource("3_hh5uf")
@@ -91,6 +93,13 @@ tile_set = SubResource("TileSet_ke4x3")
 tile_map_data = PackedByteArray("AAAFAP//AgAJAAAAAAABAAAAAgAJAAIAAAA=")
 tile_set = SubResource("TileSet_ke4x3")
 
+[node name="Darkness" type="CanvasModulate" parent="." unique_id=542012523]
+
+[node name="LightSwitch" parent="." unique_id=7776795 node_paths=PackedStringArray("darkness") instance=ExtResource("3_6whob")]
+position = Vector2(693, 796)
+scale = Vector2(1.5, 1.5)
+darkness = NodePath("../Darkness")
+
 [node name="pc" type="Area2D" parent="." unique_id=645065608]
 position = Vector2(0, 79)
 
@@ -108,6 +117,8 @@ text = "PRESS E TO BROWSE THE COMPUTER"
 
 [node name="PlayerCharacter" parent="." unique_id=1444347173 instance=ExtResource("2_v1qfn")]
 position = Vector2(639, 668)
+
+[node name="InventoryUI" parent="." unique_id=1727835338 instance=ExtResource("5_u7krg")]
 
 [connection signal="area_entered" from="pc" to="." method="_on_pc_area_entered"]
 [connection signal="body_entered" from="pc" to="." method="_on_pc_body_entered"]

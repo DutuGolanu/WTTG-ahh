@@ -9,10 +9,17 @@ func _physics_process(delta: float) -> void:
 	var direction_x := Input.get_axis("move_left", "move_right")
 	var direction_y := Input.get_axis("move_up", "move_down")
 	
-	if direction_x < 0:
-		animated_sprite_2d.flip_h = true
-	elif direction_x > 0:
-		animated_sprite_2d.flip_h = false
+	if Global.is_equipped("lanterna"):
+		var mouse_dx := get_global_mouse_position().x - global_position.x
+		if mouse_dx < -20.0:
+			animated_sprite_2d.flip_h = true
+		elif mouse_dx > 20.0:
+			animated_sprite_2d.flip_h = false
+	else:
+		if direction_x < 0:
+			animated_sprite_2d.flip_h = true
+		elif direction_x > 0:
+			animated_sprite_2d.flip_h = false
 		
 	if direction_x or direction_y:
 		animated_sprite_2d.play("run")

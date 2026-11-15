@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bebca44ttha2j"]
+
+[ext_resource type="Script" uid="uid://bwrrnagmuq0nw" path="res://Scripts.flashlight.gd" id="1_nnxok"]
+[ext_resource type="Texture2D" uid="uid://ct6bhctkmyosj" path="res://Assets/lanterna_icon.png" id="2_h3kvc"]
+
+[sub_resource type="Gradient" id="Gradient_h3kvc"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0kh7f"]
+gradient = SubResource("Gradient_h3kvc")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[node name="Flashlight" type="PointLight2D" unique_id=573605052]
+energy = 1.2
+texture = SubResource("GradientTexture2D_0kh7f")
+offset = Vector2(80, 0)
+texture_scale = 1.5
+script = ExtResource("1_nnxok")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=191318330]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_h3kvc")
