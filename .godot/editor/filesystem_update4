@@ -1,5 +1,8 @@
+<<<<<<< Updated upstream
 res://Scenes/menu.tscn
 res://Scripts/button_play.gd
 res://Scripts/menu.gd
 res://Scenes/node_2d.tscn
+=======
+>>>>>>> Stashed changes
 res://Scenes/player_character.tscn

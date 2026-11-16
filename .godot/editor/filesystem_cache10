@@ -1,4 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
+<<<<<<< Updated upstream
 ::res://::1793544755
 icon.svg::CompressedTexture2D::1790880795757653::1792435769::1793042342::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1793546029
@@ -24,3 +25,33 @@ menu.gd::GDScript::6596353249015524184::1793545939::0::1::::<>Control<><>0<>0<><
 pc.gd::GDScript::8920038246384668038::1793042239::0::1::::<>Control<><>0<>0<><>::
 player_character.gd::GDScript::3312917269047794223::1793044097::0::1::::<>CharacterBody2D<><>0<>0<><>::
 button_play.gd::GDScript::8350245169837248239::1793545884::0::1::::<>Button<><>0<>0<><>::
+=======
+::res://::1794853027
+icon.svg::CompressedTexture2D::1790880795757653::1792435769::1793042342::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assets/::1794854069
+exit_default.png::CompressedTexture2D::4483489846787382183::1793547962::1793547962::1::::<><><>0<>0<>d3ebdffed80622b3493f8fcdce05ce0d<>res://.godot/imported/exit_default.png-07b5d3d21c444eec0ced2109246d5931.ctex::
+linuxpenguin.jpg::CompressedTexture2D::2519243390822413494::1792435769::1793042342::1::::<><><>0<>0<>106ff6dd7cfe5bec7f68e3f37bf173c0<>res://.godot/imported/linuxpenguin.jpg-52cab06cdf718e3e941fdec01e7cfb34.ctex::
+Main Menu.png::CompressedTexture2D::521883325572911701::1793547962::1793547962::1::::<><><>0<>0<>b5417f197ce4f2f59be6995bc9d23f1c<>res://.godot/imported/Main Menu.png-b5118fbe73f5aa55b55ea9035b9f52dc.ctex::
+Pixel Cursor (480x160).png::CompressedTexture2D::4342088155462088412::1792435769::1793042342::1::::<><><>0<>0<>ab5de06d2d4509e762954dcd67911ddb<>res://.godot/imported/Pixel Cursor (480x160).png-10e086a63cc7477fc058399a094fe123.ctex::
+player.png::CompressedTexture2D::299505175186481860::1794854069::1794854069::1::::<><><>0<>0<>e1bd498901105b70c4b94155ced4cf69<>res://.godot/imported/player.png-5fe826d179e8297c657fd07c30124f2f.ctex::
+playerAnimated.png::CompressedTexture2D::4462703295450222885::1793547962::1793547962::1::::<><><>0<>0<>3f1c86f3282ca4d5fdb9b7b2cafb289b<>res://.godot/imported/playerAnimated.png-f3b807cc5872451fa59370bfa25e8776.ctex::
+play_default.png::CompressedTexture2D::1730554930753004293::1793547962::1793547962::1::::<><><>0<>0<>c08822c3324549befc3c929afc9443ea<>res://.godot/imported/play_default.png-7fe232c5292bd9161cefa82a2eb0debc.ctex::
+settings_default.png::CompressedTexture2D::290899190381120266::1793547962::1793547962::1::::<><><>0<>0<>04ce31202b04eac6cc83fc2ebc766662<>res://.godot/imported/settings_default.png-55a29925a968b33f4848606fb19a8f6b.ctex::
+tileset3.png::CompressedTexture2D::1749677289704967901::1793547962::1793547962::1::::<><><>0<>0<>21b72b009ca5cd1f3c4995992eeacfa6<>res://.godot/imported/tileset3.png-542c12301bfb20996e102c15e210b781.ctex::
+::res://Scenes/::1794853216
+Fundal_main_menu.jpg::CompressedTexture2D::1915840358430710599::1792435769::1793042343::1::::<><><>0<>0<>25799e866315a58fa53f3b4e77e5ff7d<>res://.godot/imported/Fundal_main_menu.jpg-dc28b7e652224478f863dc92f08457f2.ctex::
+menu.tscn::PackedScene::6268759943866120368::1793547962::0::1::::<><><>0<>0<><>::uid://c08k8ei11c345::::res://Scripts/menu.gd<>uid://ho2lvq3ysebt::::res://Assets/Main Menu.png<>uid://ywj8s3a6w5g8::::res://Assets/play_default.png<>uid://ee6cjv3toeik::::res://Assets/settings_default.png<>uid://b443omxaaty8n::::res://Assets/exit_default.png
+node_2d.tscn::PackedScene::2067450008304524526::1794059993::0::1::::<><><>0<>0<><>::uid://cctgvgpd1p763::::res://Scripts/dormitor.gd<>uid://fe04lx08pprm::::res://Scenes/player_character.tscn<>uid://y6s6uknwjy6x::::res://Assets/tileset3.png
+pc.tscn::PackedScene::6462282322154869987::1794060017::0::1::::<><><>0<>0<><>::uid://d0c6yybucjnbi::::res://Scripts/pc.gd<>uid://b24ls7rkak32g::::res://Assets/Pixel Cursor (480x160).png<>uid://bb5ltnudvvx87::::res://Assets/linuxpenguin.jpg<>uid://b7c4y08trcrxa::::res://Scripts/Pc_Apps/browser.gd
+player_character.tscn::PackedScene::360772056516749938::1794853216::0::1::::<><><>0<>0<><>::uid://bng2i7qufnc8n::::res://Scripts/player_character.gd<>uid://ejc2oj1lrqci::::res://Assets/player.png
+::res://Scripts/::1794059993
+button_play.gd::GDScript::8350245169837248239::1793547962::0::1::::<>Button<><>0<>0<><>::
+character_body_2d.gd::GDScript::3688761218886401388::1792435769::0::1::::<>CharacterBody2D<><>0<>0<><>::
+dormitor.gd::GDScript::4952844374101849970::1794059993::0::1::::<>Node2D<><>0<>0<><>::
+global.gd::GDScript::6817818281649720358::1792435769::0::1::::<>Node<><>0<>0<><>::
+menu.gd::GDScript::6596353249015524184::1793547962::0::1::::<>Control<><>0<>0<><>::
+pc.gd::GDScript::8920038246384668038::1793547944::0::1::::<>Control<><>0<>0<><>::
+player_character.gd::GDScript::3312917269047794223::1793547962::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/Pc_Apps/::1793547944
+browser.gd::GDScript::4638397452410590994::1793547944::0::1::::<>SubViewportContainer<><>0<>0<><>::
+>>>>>>> Stashed changes

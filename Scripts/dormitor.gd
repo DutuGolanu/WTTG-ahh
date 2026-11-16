@@ -19,8 +19,11 @@ func _process(_delta: float) -> void:
 		$RichTextLabel.show()
 		if Input.is_action_just_pressed("interact"):
 			get_tree().change_scene_to_file("res://Scenes/pc.tscn")
+<<<<<<< Updated upstream
 
 
 #func _on_pc_body_entered(_body: Node2D) -> void:
 #	get_tree().change_scene_to_file("res://Scenes/pc.tscn")
 	
+=======
+>>>>>>> Stashed changes

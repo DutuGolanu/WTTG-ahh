@@ -80,9 +80,15 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 40.0
+<<<<<<< Updated upstream
 offset_top = 41.0
 offset_right = -40.0
 offset_bottom = -40.0
+=======
+offset_top = 38.0
+offset_right = -40.0
+offset_bottom = -43.0
+>>>>>>> Stashed changes
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_cyams")
