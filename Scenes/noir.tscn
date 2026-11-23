@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://byhh54lqyaxk5"]
+
+[ext_resource type="Script" uid="uid://dl5pj12mhaw8k" path="res://Scripts/enemies/noir.gd" id="1_t4vxg"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_ul7x4"]
+[ext_resource type="AudioStream" uid="uid://pwv3wo78j4v6" path="res://Assets/Sounds/soumages-jumpscare-v3-335600.mp3" id="3_tpn2s"]
+
+[node name="Noir" type="CharacterBody2D" unique_id=2032087295]
+script = ExtResource("1_t4vxg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=649493936]
+texture = ExtResource("1_ul7x4")
+
+[node name="warning_sound" type="AudioStreamPlayer2D" parent="." unique_id=2041167233]
+stream = ExtResource("3_tpn2s")
